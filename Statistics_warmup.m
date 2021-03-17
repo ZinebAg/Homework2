@@ -25,7 +25,7 @@
     obs9=normrnd(0,1,[1,2560]);
     
     
-    
+    figure(1)
     subplot(3,3,1);
     histogram(obs1);
     title('n=10');
@@ -72,7 +72,7 @@
     %Normal(0, 1), Normal(1, 1), Normal(0, 2),
     %Student(1), Student(6), Exponential(0.25), 
     % Exponential(4), Beta(1, 1), Beta(4, 2), Beta(2, 4), Beta(2, 2)
-    
+    figure(2)
     subplot(3,4,1); 
     x = [-4:.1:4];
     y1 = normpdf(x,0,0.5);
@@ -146,7 +146,7 @@
      % of n = 1500 RVs having a distribution in one of the above.
      % Do it for all the distributions given above. Display
      % the corresponding standard normal QQ-plots.
-     
+    figure(3)
     x = [-10:.1:10];     
     subplot(3,4,1); 
     sample1= generatenormal(1500,0,0.5);
