@@ -217,6 +217,9 @@ hold off
 title("Prediction interval at level 0.95 for N=30")
 
 figure (14)
+subplot(1,2,1)
+qqplot(Xi)
+subplot(1,2,2)
 qqplot(Yi)
 
 figure(15)
