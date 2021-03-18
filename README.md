@@ -10,3 +10,5 @@ You find here our report and codes for this second homework in the following fil
 4. "SIMULATION_RANDOM_WAYPOINT.m": containing the code to corresponding to the questions in section "2 SIMULATE RANDOM WAYPOINT AND LOOK AT WHAT YOU HAVE DONE".
 5. "DIFFERENT_VIEWPOINTS.m": containing the code to corresponding to the questions in section "3 DIFFERENT VIEWPOINTS".
 6. "CONFIDENCE_INTERVALS.m": containing the code to corresponding to the questions in section "4 CONFIDENCE INTERVALS".
+
+When you run the code of a section of the report, the figures corresponding to this section will be automatically displayed and will have the same number reference present in the report.
