@@ -45,7 +45,7 @@ for n = [1:N]
     sizesX = [sizesX, length(X{1,n}(:,1))];
 end
 
-figure(1)
+figure(4)
 boxplot(sizesX);
 hold on
 ylim([210 275]);
@@ -54,7 +54,7 @@ scatter(1,max(sizesX),'d','filled','r');
 
 
 % 2. displays the trajectory and waypoints of one user; of 5 users.
-figure(2)
+figure(5)
 subplot(2,1,1)
 plot(X{1,1}(:,1),X{1,1}(:,2),'-')
 title("Course of one user")
@@ -64,7 +64,7 @@ plot(X{1,1}(:,1),X{1,1}(:,2),'.')
 title("Waypoints of one user")
 
 
-figure(3)
+figure(6)
 subplot(2,1,1)
 hold on
 plot(X{1,30}(:,1),X{1,30}(:,2),'-')
