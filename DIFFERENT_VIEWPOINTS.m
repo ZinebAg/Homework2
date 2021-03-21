@@ -133,10 +133,10 @@ for n=[1:N]
     end
 end
 
-figure(12)
+figure(11)
 surf(square)
 colormap('gray')
-title("Histogram of mobile positions based on the samples for all users with transition epochs Tn")
+title("Histogram of mobile positions based on the samples for all users with transition epochs Tn- move the mouse to get the 2D projection")
 
 
 %   TIME AVERAGE VIEWPOINT---------------------------------------
@@ -194,7 +194,14 @@ for n=[1:N]
     V10{1,n} = Vn;
 end
 
-
+% Course and waypoints of one user sampled every 10 seconds
+figure(14)
+subplot(2,1,1)
+plot(X10{1,1}(:,1),X10{1,1}(:,2),'-')
+title("Course of one user sampled every 10 seconds")
+subplot(2,1,2)
+plot(X10{1,1}(:,1),X10{1,1}(:,2),'.')
+title("Waypoints of one user sampled every 10 seconds")
 
 %histogram of speeds sampled every 10 seconds based on the samples for one mobile
 figure(15)
@@ -250,10 +257,10 @@ for k=[1:min(length(indexycurrent),length(indexxcurrent))]
     square101(indexxcurrent(k), indexycurrent(k))=square101(indexxcurrent(k), indexycurrent(k))+1;
 end
 
-figure(19)
+figure(17)
 surf(square101)
 colormap('gray')
-title("Histogram of mobile positions sampled every 10 seconds for one user")
+title("Histogram of mobile positions sampled every 10 seconds for one user- move the mouse to get the 2D projection")
 
 % histogram of mobile positions sampled every 10 seconds (based on the samples for all mobiles)
 square10=zeros(100);
@@ -293,6 +300,4 @@ end
 figure(21)
 surf(square10)
 colormap('gray')
-title("Histogram of mobile positions sampled every 10 seconds for all users")
-
-
+title("Histogram of mobile positions sampled every 10 seconds for all users- move the mouse to get the 2D projection")
