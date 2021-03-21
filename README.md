@@ -12,3 +12,5 @@ You find here our report and codes for this second homework in the following fil
 6. "CONFIDENCE_INTERVALS.m": containing the code to corresponding to the questions in section "4 CONFIDENCE INTERVALS".
 
 When you run the code of a section, the figures corresponding to this section displayed in the report will be automatically outputted and will have the same number reference present in the report.
+
+NOTE: for the 3D plots, move the mouse to get the 2D projection.
